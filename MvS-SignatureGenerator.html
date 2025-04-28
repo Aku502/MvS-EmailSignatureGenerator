@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Generator</title>
+  <link rel="stylesheet" href="EmailSigGenerator.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <img src="https://i.imgur.com/rsPJwCC.png" alt="Studio Icon" class="icon">
+  <h1>E-mail Signature Generator</h1>
+  
+  <label>Full Name:</label>
+  <input type="text" id="fullName" placeholder="e.g. Anthony Chavarria">
+
+  <label>Job Title:</label>
+  <input type="text" id="jobTitle" placeholder="e.g. Art Director">
+
+  <label>Email:</label>
+  <input type="text" id="email" placeholder="e.g. anthony@manvsskeletonstudio.com">
+
+  <button onclick="generateSignature()">Generate Signature</button>
+
+  <h3>Result:</h3>
+  <textarea id="signatureOutput" readonly></textarea>
+
+  <button onclick="downloadSignature()">Download Signature</button>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="EmailSigGenerator.js" defer></script>
+
+</body>
+</html>
